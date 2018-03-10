@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_erq6ECSIEeiuL_jiustgrQ" name="model">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Xo5lcCSJEeiuL_jiustgrQ" name="model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_3YfjsCSJEeiuL_jiustgrQ" name="Board">
+      <ownedAttribute xmi:id="_W5SQ8CSKEeiuL_jiustgrQ" name="cells[][]" visibility="private" type="_NwbkICSMEeiuL_jiustgrQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NwbkICSMEeiuL_jiustgrQ" name="Cell">
+      <ownedAttribute xmi:id="_PRbc0CSMEeiuL_jiustgrQ" name="content" type="_C2nFcCSNEeiuL_jiustgrQ"/>
+      <ownedAttribute xmi:id="_fXaMcCSNEeiuL_jiustgrQ" name="isHit">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_C2nFcCSNEeiuL_jiustgrQ" name="CellContent">
+      <ownedLiteral xmi:id="_FsOAoCSNEeiuL_jiustgrQ" name="Water"/>
+      <ownedLiteral xmi:id="_KEb-ECSNEeiuL_jiustgrQ" name="Ship"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4Xx5oCSNEeiuL_jiustgrQ" name="Player">
+      <ownedAttribute xmi:id="_6YAsACSNEeiuL_jiustgrQ" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bogOkCSJEeiuL_jiustgrQ" name="view"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hbA_wCSJEeiuL_jiustgrQ" name="controller"/>
+</uml:Model>
