@@ -16,10 +16,26 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_4Xx5oCSNEeiuL_jiustgrQ" name="Player">
       <ownedAttribute xmi:id="_6YAsACSNEeiuL_jiustgrQ" name="name">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+        <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#LiteralString"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YfcVcCSVEei03vPUM6qUBw" name="Game">
+      <ownedAttribute xmi:id="_cHy8MCSVEei03vPUM6qUBw" name="board" type="_3YfjsCSJEeiuL_jiustgrQ"/>
+      <ownedAttribute xmi:id="_ldXkcCSVEei03vPUM6qUBw" name="players" type="_4Xx5oCSNEeiuL_jiustgrQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qVei4CSVEei03vPUM6qUBw" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sl34MCSVEei03vPUM6qUBw" value="2"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_xygqQCSXEei03vPUM6qUBw" name="currentPlayer">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </ownedAttribute>
     </packagedElement>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_bogOkCSJEeiuL_jiustgrQ" name="view"/>
-  <packagedElement xmi:type="uml:Package" xmi:id="_hbA_wCSJEeiuL_jiustgrQ" name="controller"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_bogOkCSJEeiuL_jiustgrQ" name="view">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_7C-TkCSYEei03vPUM6qUBw" name="ViewInterface"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hbA_wCSJEeiuL_jiustgrQ" name="controller">
+    <packagedElement xmi:type="uml:Class" xmi:id="_QM0GACSXEei03vPUM6qUBw" name="GameController">
+      <ownedAttribute xmi:id="_UUJHwCSXEei03vPUM6qUBw" name="game" type="_YfcVcCSVEei03vPUM6qUBw"/>
+    </packagedElement>
+  </packagedElement>
 </uml:Model>
